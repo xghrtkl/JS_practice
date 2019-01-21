@@ -1,0 +1,30 @@
+<!-- 
+    On body load, show a prompt alert to user. 
+    User will provide his name in prompt. 
+    Show that name in element (id=heading1) on the page.
+
+Hint: 
+you need to use prompt function.
+You need to use document.getElementById to find an element
+You need to use its "innerText" property to set some content 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task05</title>
+    <script type="text/javascript">
+        function x(){
+        //Write your logic here
+        var userName = prompt('Please input your name: ')
+        document.getElementById("heading1").innerText = 'Hi ' + userName
+        }
+    </script>
+</head>
+<body onload="x();">
+        <h1 id="heading1"></h1>
+    </body>
+</html>

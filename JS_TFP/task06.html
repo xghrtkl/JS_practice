@@ -1,0 +1,33 @@
+<!-- 
+    Write event handler for click of button (id=btnShow) 
+    and show your roll number in alert.
+    Hint: use onclick property of button 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task06</title>
+    <script type="text/javascript">
+        function x(){
+        //Write your logic here
+            // alert(Math.floor(Math.random() * 7) + 1)
+          document.getElementById("btnShow").onclick = function(){
+            alert('left button clicked') 
+          }  
+        } function right(){
+            alert('right button clicked')
+        }
+    </script>
+</head>
+<body onload='x();'>
+	
+        <button id="btnShow">Show</button>
+        
+        <!-- Bind event on following button inline -->
+        <button id="btnShow2", onclick='right()'>Show2</button>
+    </body>
+</html>
