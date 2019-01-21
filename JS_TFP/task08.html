@@ -1,0 +1,45 @@
+<!-- 
+    When You’ll click button (id=btnMe), 
+    it should show your roll number in alert after 2 seconds. 
+    Hint: setTimeOut function
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task09</title>
+    <script type="text/javascript">
+        //WHY THIS CODE DOESNT RUN THE TIMEOUT?
+        // setTimeout(function x(){
+        //   document.getElementById("btnMe").onclick = function(){
+        //   alert(Math.floor(Math.random() * 7) + 1)            
+        //   }
+        // },2000)
+
+        // function Main(){
+        // document.getElementById('btnMe').onclick = 
+        //  function(){
+        // 		setTimeout("alert('hello')",2000); //why it call "alert('hello')", not the 'showalert()' function?
+        // 	};
+        // }
+        // function showalert(){
+        // 	alert('hello');	
+        // }
+
+        function x(){
+          document.getElementById("btnMe").onclick = function(){
+          setTimeout(z,2000)            
+          }
+        } function z(){
+          alert(Math.floor(Math.random() * 7) + 1)
+        }
+    </script>
+</head>
+<body onload='x();'>
+	
+	<button id="btnMe">Click Me</button> <br>
+</body>
+</html>

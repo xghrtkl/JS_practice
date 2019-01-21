@@ -1,0 +1,28 @@
+<!-- 
+    Write code to find maximum number from the given array.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task09</title>
+    <script type="text/javascript">
+        function Main(){
+        var arr = [5,3,2,4,1,10,0];
+        //Converting Array to a string and showing it on page
+          document.getElementById('data').innerText = arr.toString();
+          document.getElementById('btnFind').onclick = function(){
+            //Write your logic here
+            document.getElementById("data").innerText = Math.max(...arr)
+            };//end of onclick
+        }//end of Main
+    </script>
+</head>
+<body onload="Main();">
+	<h1 id='data'></h1>
+	<button id="btnFind">Find Maximum</button> <br>
+</body>
+</html>

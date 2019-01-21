@@ -1,7 +1,6 @@
 <!-- 
-    Write event handler for click of button (id=btnShow) 
-    and show your roll number in alert.
-    Hint: use onclick property of button 
+    Write event handle for click of button (id=btnAdd) 
+    and show sum of entered numbers.
 -->
 
 <!DOCTYPE html>
@@ -10,23 +9,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Task06</title>
+    <title>Task07</title>
     <script type="text/javascript">
         function x(){
         //Write your logic here
-            // alert(Math.floor(Math.random() * 7) + 1)
-          document.getElementById("btnShow").onclick = function(){
-            alert('left button clicked') 
-          }
-            alert('right button clicked')
-        }
+        document.getElementById("btnAdd").onclick = function(){
+            document.getElementById('txtResult').value = 
+              parseInt(document.getElementById('txtFirst').value) + 
+              parseInt(document.getElementById('txtSecond').value)
+          }  
+        }        
     </script>
 </head>
 <body onload='x();'>
 	
-        <button id="btnShow">Show</button>
-        
-        <!-- Bind event on following button inline -->
-        <button id="btnShow2", onclick=x()>Show2</button>
-    </body>
+	First:<input type="text" id="txtFirst"> <br>
+	Second:<input type="text" id="txtSecond"> <br>
+	<button id="btnAdd">Add</button> <br>
+	Result:<input type="text" id="txtResult">
+</body>
 </html>
