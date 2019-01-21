@@ -1,0 +1,1 @@
+var firstname = 'Lata' //assign 'Lata' string into firstname variable
